@@ -1,0 +1,615 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+color: var(--sec);
+    font-family: 'myFont3' !important;
+}
+
+header {
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 44px;
+    background-color: var(--four);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    /* For Safari/Chrome */
+
+}
+
+.r {
+    background-color: red !important;
+}
+
+.g {
+    background-color: green !important;
+}
+
+.b {
+    background-color: blue !important;
+}
+
+:root {
+    --prim: #000;
+    --sec: #fff;
+    --four: rgba(22, 22, 23, .8);
+    --three: rgba(255, 255, 255, .8);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--three) !important;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -.01em;
+    font-family: 'myFont3' !important;
+}
+
+header a:hover {
+    color: var(--sec) ;
+    transition: color 0.2s ease;
+}
+
+.section-1 {
+
+    background: url(assets/Images/first-sec-2.jpg);
+
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-color: rgb(245, 245, 247) !important;
+
+}
+
+.section-1 h2 {
+    color: var(--prim);
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -.002em;
+    font-family: 'myFont5' !important;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url('Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('SF-Pro-Text-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont3';
+    src: url('SF-Pro-Text-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont4';
+    src: url('SF-Pro-Text-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'myFont5';
+    src: url('SF-Pro-Text-Semibold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'myFont6';
+    src: url('SF-Pro-Text-Regular.otf') format('truetype');
+}
+
+.section-1 p {
+    font-family: 'myFont6' !important;
+line-height: 1;
+    font-size: 24px;
+    color: var(--prim) !important;
+}
+.section-1 a,.section-2 a{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont6';
+    font-size: 22px; 
+    
+}
+.section-1 span,.section-2 span,.section-3 span{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont4';
+    font-size: 22px; 
+    margin-left: -26px;
+    margin-top: 2px;
+}
+.section-2{
+    margin-top: 10px;
+    height: 90vh;
+background:url(assets/Images/sec-2-banner.jpg);
+background-size: cover;
+background-position: center;
+}
+.section-2 h1{
+    font-family: 'myFont4';
+    color: var(--sec);
+    font-size: 58px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.section-2 p {
+    font-family: 'myFont6' !important;
+line-height: 1;
+color: var(--sec) !important; 
+font-size: 26px;
+letter-spacing: -1px;
+text-align: center;
+}
+.section-3{
+    margin-top: 10px;
+    height: 100vh;
+background:url(assets/Images/sec-3-banner.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.section-3 h1{
+    font-family: 'myFont4';
+    color: var(--prim);
+    font-size: 58px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.section-3 p {
+    font-family: 'myFont6' !important;
+line-height: 1;
+color: var(--prim) !important; 
+font-size: 26px;
+letter-spacing: -1px;
+text-align: center;
+}
+.section-3 a{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont6';
+    font-size: 22px; 
+    
+}
+.section-4{
+    margin-top: 10px;
+    height: 100vh;
+}
+.section-4 div:nth-child(1){
+background: url(assets/Images/sec-4-1.jpg);
+background-size: cover;
+background-position: center;
+border-right: 10px solid #fff;
+height: 100vh;
+
+}
+.section-4 div:nth-child(2){
+    background: url(assets/Images/sec-4-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.section-4 div:nth-child(1) h1{
+    font-family: 'myFont4';
+    color: var(--prim);
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+   padding-top: 50px;
+}
+.section-4 div:nth-child(1) p{
+    font-family: 'myFont6' !important;
+    line-height: 1;
+    color: var(--four) !important; 
+    font-size: 22px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.section-4 div:nth-child(1) a{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont5';
+    font-size: 18px; 
+}
+.section-4 div:nth-child(1) span{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont4';
+    font-size: 22px; 
+    margin-left: -26px;
+    margin-top: 2px;
+}
+.section-4 div:nth-child(2) h1{
+    font-family: 'myFont4';
+    color: var(--sec);
+    font-size: 35px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+   padding-top: 50px;
+}
+.section-4 div:nth-child(2) p{
+    font-family: 'myFont6' !important;
+    line-height: 1;
+    color: var(--sec) !important; 
+    font-size: 22px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.section-4 div:nth-child(2) a{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont5';
+    font-size: 18px; 
+}
+.section-4 div:nth-child(2) span{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'myFont4';
+    font-size: 22px; 
+    margin-left: -26px;
+    margin-top: 2px;
+}
+.section-4 div:nth-child(2) strong{
+    color: rgb(196, 3, 3);
+    text-decoration: none;
+    font-family: 'myFont4';
+    font-size: 16px; 
+    margin-left: -26px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: -12px;
+}
+
+.section-5 div:nth-child(1){
+    background: url(assets/Images/sec-4-3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-right: 10px solid #fff;
+    height: 100vh;
+    
+    }
+    .section-5 div:nth-child(2){
+        background: url(assets/Images/sec-4-4.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .section-5 div:nth-child(1) h1{
+        font-family: 'myFont4';
+        color: var(--prim);
+        font-size: 40px;
+        line-height: 1.3;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+       padding-top: 50px;
+    }
+    .section-5 div:nth-child(1) p{
+        font-family: 'myFont6' !important;
+        line-height: 1;
+        color: var(--four) !important; 
+        font-size: 22px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .section-5 div:nth-child(1) a{
+        color: #06c;
+        text-decoration: none;
+        font-family: 'myFont5';
+        font-size: 18px; 
+    }
+    .section-5 div:nth-child(1) span{
+        color: #06c;
+        text-decoration: none;
+        font-family: 'myFont4';
+        font-size: 22px; 
+        margin-left: -26px;
+        margin-top: 2px;
+    }
+    .section-5 div:nth-child(2) h1{
+        font-family: 'myFont4';
+        color: var(--sec);
+        font-size: 35px;
+        line-height: 1.3;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+       padding-top: 50px;
+    }
+    .section-5 div:nth-child(2) p{
+        font-family: 'myFont6' !important;
+        line-height: 1;
+        color: var(--sec) !important; 
+        font-size: 20px;
+
+        text-align: center;
+    }
+    .section-5 div:nth-child(2) a{
+        color:var(--sec);
+        text-decoration: none;
+        font-family: 'myFont5';
+        font-size: 18px; 
+    }
+    .section-5 div:nth-child(2) span{
+        color:var(--sec);
+        text-decoration: none;
+        font-family: 'myFont4';
+        font-size: 22px; 
+        margin-left: -26px;
+        margin-top: 2px;
+    }
+    .section-5 div:nth-child(2) strong{
+        color: rgb(196, 3, 3);
+        text-decoration: none;
+        font-family: 'myFont4';
+        font-size: 16px; 
+        margin-left: -26px;
+        margin-top: 2px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: -12px;
+    }
+    
+
+
+    .section-6 div:nth-child(1){
+        background: url(assets/Images/sec-6-1.jpg);
+        background-size: cover;
+        background-position: center;
+        border-right: 10px solid #fff;
+        height: 100vh;
+        
+        }
+        .section-6 div:nth-child(2){
+            background: url(assets/Images/sec-6-2.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .section-6 div:nth-child(1) h1{
+            font-family: 'myFont4';
+            color: var(--prim);
+            font-size: 40px;
+            line-height: 1.3;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+           padding-top: 50px;
+        }
+        .section-6 div:nth-child(1) p{
+            font-family: 'myFont6' !important;
+            line-height: 1;
+            color: var(--four) !important; 
+            font-size: 22px;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+        .section-6 div:nth-child(1) a{
+            color: #06c;
+            text-decoration: none;
+            font-family: 'myFont5';
+            font-size: 18px; 
+        }
+        .section-6 div:nth-child(1) span{
+            color: #06c;
+            text-decoration: none;
+            font-family: 'myFont4';
+            font-size: 22px; 
+            margin-left: -26px;
+            margin-top: 2px;
+        }
+        .section-6 div:nth-child(2) h1{
+            font-family: 'myFont4';
+            color: var(--prim);
+            font-size: 35px;
+            line-height: 1.3;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+           padding-top: 50px;
+        }
+        .section-6 div:nth-child(2) p{
+            font-family: 'myFont6' !important;
+            line-height: 1;
+            color: var(--four) !important; 
+            font-size: 20px;
+    
+            text-align: center;
+        }
+        .section-6 div:nth-child(2) a{
+            color:#06c;
+            text-decoration: none;
+            font-family: 'myFont5';
+            font-size: 18px; 
+        }
+        .section-6 div:nth-child(2) span{
+            color:#06c;
+            text-decoration: none;
+            font-family: 'myFont4';
+            font-size: 22px; 
+            margin-left: -26px;
+            margin-top: 2px;
+        }
+
+        /* slider */
+
+
+        .swiper {
+            width: 100%;
+            height: 100vh;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            
+          }
+      
+          .swiper-slide {
+            
+           height: 100% !important;
+          background-size: contain !important;
+          background-repeat: no-repeat !important;
+         
+        
+      
+          }
+          .swiper-pagination{
+            top:80% !important;
+          }
+          .swiper-pagination-bullet{
+            background-color: var(--prim);
+          }
+          .slide-1{
+            background: url(assets/Images/Slider/1.jpg);
+          }
+          .slide-2{
+            background: url(assets/Images/Slider/2.jpg);
+          }
+          .slide-3{
+            background: url(assets/Images/Slider/3.jpg);
+          }
+          .slide-4{
+            background: url(assets/Images/Slider/4.jpg);
+          }
+          .slide-5{
+            background: url(assets/Images/Slider/5.jpg);
+          }
+          .slide-6{
+            background: url(assets/Images/Slider/6.jpg);
+          }
+          .slide-7{
+            background: url(assets/Images/Slider/7.jpg);
+          }
+          .slide-8{
+            background: url(assets/Images/Slider/8.jpg);
+          }
+          .slide-9{
+            background: url(assets/Images/Slider/9.jpg);
+          }
+
+          .section-7{
+            background-color: rgb(245, 245, 247) !important;
+            top: -80px;
+            padding:17px 0 11px ;
+            position: relative;
+          }
+          .section-7 li{
+      
+            list-style-type: none;
+            color: var(--sec);
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.56);
+          }
+
+header div:nth-child(3) i{
+    display: none;
+}
+          .res-nav{
+            display: none;
+          }
+          
+
+
+          /* responsive work start */
+
+          @media screen and (max-width:480px){
+            body{
+                overflow-x: hidden !important;
+            }
+            header div:nth-child(2){
+                display: none !important;
+                
+            }
+            header div:nth-child(1){
+                justify-content: start !important;
+              
+            }
+            header div:nth-child(1){
+                  margin-left: 15px;
+
+            }
+            
+            header div:nth-child(3){
+                gap: 20px !important;
+                justify-content: center !important;
+            }
+            header div:nth-child(3) img:nth-child(2){
+               
+                height: 20px;
+            }
+            header div:nth-child(3) img:nth-child(1){
+margin-top: 2px;
+
+height: 20px;
+            }
+
+            header{
+                height: 50px;
+            }
+            .res-nav{
+                transition: all 0.5s ease;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                height: 100vh;
+                position: absolute;
+                top: 0%;
+                left: 100%;
+                width: 100%;
+            }
+            .res-nav a{
+                font-size: 25px !important;
+                padding: 5px 25px;
+                font-family: 'myFont6' !important;
+                color:var(--four) !important;
+                margin-top: 12px;
+            }
+            .res-nav i{
+                display: block;
+                position: absolute;
+                left: 87%;
+                top: 2%;
+                font-size: 40px;
+            }
+            header div:nth-child(3) i{
+                display: block;
+                color: white;
+                font-size: 25px;
+
+            }
+            .section-4 div:nth-child(2){
+                display: none !important;
+            }
+        }
