@@ -3,13 +3,22 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     spaceBetween: 30,
     autoplay:{
-      delay:3500,
+      delay:4000,
+     
       disableOnInteraction:false,
     },
     loop:true,
     pagination: {
       el: ".swiper-pagination",
     },
+    // breakpoints: {
+    //   640: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20,
+    //   },
+
+
+    // },
   });
 
   function openNav(){
@@ -22,3 +31,8 @@ var swiper = new Swiper(".mySwiper", {
     resNav.style.left='100%';
     document.body.style.overflow='auto'
   }
+
+
+
+
+
