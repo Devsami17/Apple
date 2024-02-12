@@ -47,7 +47,9 @@ third: ['Certified Refurbished','Education','Business','Veterans and Military','
 // sub menu
 var subMenu = document.querySelector('.sub-menu');
 var des_links = document.querySelectorAll('.nav-links a');
-var first_row = document.getElementById('nav_first');
+var first_row = document.getElementById('first_col');
+var sec_row = document.getElementById('sec_col');
+var third_row = document.getElementById('third_col');
 des_links.forEach((item) => {
     item.onmouseenter = () => {
         subMenu.style.height = '400px';
@@ -62,12 +64,20 @@ des_links.forEach((item) => {
 });
 
 function nav_store() {
-
 navbarData[0].first.forEach((navs)=>{
-  subMenu.innerHTML+=`
-  <li>${navs}</li>
-  `
+  first_row.innerHTML+="<li>"+navs+"</li>";
 })
+navbarData[0].second.forEach((navs1)=>{
+  sec_row.innerHTML+="<li>"+navs1+"</li>";
+})
+navbarData[0].third.forEach((navs2)=>{
+  third_row.innerHTML+="<li>"+navs2+"</li>";
+})
+// navbarData[0].first.forEach((navs)=>{
+//   subMenu.innerHTML+=`
+//   <li>${navs}</li>
+//   `
+// })
 
 // subMenu.innerHTML= `<div class="col-lg-3">
 // <ul>
