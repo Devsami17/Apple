@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple</title>
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon2.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -35,7 +35,7 @@
             <a href="" onmouseover="nav_ipad()">iPad</a>
             <a href="" onmouseover="nav_iphone()">iPhone</a>
             <a href="" onmouseover="nav_watch()">Watch</a>
-            <a href="" onmouseover="nav_vison()">Vision</a>
+            <a href="" onmouseover="nav_vision()">Vision</a>
             <a href="" onmouseover="nav_airpods()">AirPods</a>
             <a href="" onmouseover="nav_tv()">TV</a>
             <a href="" onmouseover="nav_entertainement()">Entertainment</a>
@@ -44,9 +44,9 @@
         </div>
         <div class="col-lg-2 col-7  d-flex justify-content-start  align-items-center gap-4">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA2RJREFUWEftl23I31MYx7+f88NKIe/sgclDWyPyZmnz4m5qHqK8QOSxNrxRo5Y76k5pediSO6FlmilSKIVYydgLllfU1Ex7ENFCUbKxnN9X53+fbv9Hv9/Z7t1t5Xp7rut7Pr/rnOs61w8dZ8ZxxqMTE8j2CtX1SsHlks6TdJakA5L2yd6hELYC22ci2/+ZIduXyn5e0vIWm30kuB/4uoXvSJeRQLbvkL1J0pyCDQ4JbgbeK4jpcR0KZPtG2W92ef4te6NC+FjSbkn789EtVl2vENwrqZr2h5XAh0cCNQBke6HsnZJOy4J7BdcC34zawPbFsj+QtCD7/CxYAvxSCjUIVNdvS7ohC+0WXNFG2PYC2Z9JOrsTa79IVd13VEC2l8r+PIscFiwCvm0rmovgC6nTTiy4ANjXNj759WTIMU4K1uQvnKSqHiwR6yQmxtcFt3Ti4CFgQ4lGL1Bdp5JdlMWWATtKxKZOyjfJfiPHbSOEK0s0+oF+k3RGBjod+L1ELAOdKztVYbLvCGFhiUY/0GFJJ2egk4BYIpaB5sj+M8cdIoRTSzT6gX6UNDcDzQXS81BktufJ/iEH7SSES0oE+oE+lbQsA10DbC0Ryxm6XvY7nTj7Narq9hKNXiB7QvZjWewlquqeErEOQ4yvCm7LHzUOrC/R6AdaLHtXFqhzt01PRSvLfejL7PyX4ELg+1bB2WmwU8f4iuDOvL5HsBz4qUnU9jm5U8/PGV5HVU00xfWvD3vL0qX8StKZ2Xm/4OqGt+wy2e/nOSmFHRCcDxw8aqB8Ma+T/W6XWHrtX1AIn3S99qmBLlFdjwlW93X9twR3A3/MCFCGulX2FkmnFIim/pPuUJosfxVMSnoWSA23lTVNjBfJfk7SWAu1bYJUlSmbe6YbrHRQ8BQwVb0N1mrIzzP1VV0z9TxJQWkzabvgZWB6oHOMGwW9owdMAOtmBKhJpH89V1waO/6dIpMTPNqUqVYZKgXq3MEYHxc8PBBrr6eqxkdpHjsgG9X1JsGqIVBbFMIqoG7sQ0eSjVExtoPqerPgriFQmxXCasDda8csQ92bOMZnBA8MQE39MnX/3czer7Rj3CBYOw1lP0FVPTKrRzZQfTE+KRhPYMDTw456Vo6s5/jsMSA9QUNt1oGaiuZ/oBMuQ/8Ah3xQNE5ojAkAAAAASUVORK5CYII="
-                height="17px" />
+                height="17px" onclick="searchIcon()" />
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAc5JREFUWEftlz1oFUEUhc+3a2NnJQSsxCpBiJViLZYSwdLCIqhgJwr+BE0EDfjTCYohRSobES3FLtjYCSrPRtKEFDZJLcweSRjDw7x9s/OyQgg75dyz935z5u4wg/bYYI/xaP8A2Z5QVV0WTEqaiE5/k/1FRfES+DGK+yM55BAeCGakWoeD4DbwJBcqG8ghPBdca1TInqMsZxtpoygLyPa07IW+AsuCO5K+x7njsh9LOrWtgSngfVOoxkC2S9lrkg5vJbdfqyguAlV/sah7K+lcnO9RFOP/A+iM7I8x8YbgKLA+qJDtMdk/JR3cisM40GsClePQddnPYtJ3FMX5YQVcVR8knY1Al4CltoHuyZ6L2/WIsrw7FCiEecGtCDQDPGwXKIRZwf0IlPx7nKn/C7tjy2wfkf1G0skmK9qF5rPgArDan2MQ0A3Z2QfaSGBwE3g6HKjf6pGqZHw04ODc6VDN3uf2RJ0+lacDas2hjM4YKu2AUk52DnUOpRxIxbse6hxKOZCK74Mesq/KfpFaaStxuAK8St0YN6+wXyUdaqVofZJfghPA5ltvewx8Btk+JntR0mlJB1oG+y3pk2AaWPk3d+N3WctQtek6oJTTfwAE65Y00iOMMwAAAABJRU5ErkJggg=="
-                height="17px" />
+                height="17px" onclick="cartIcon()" />
             <div> <i class="bx bx-menu-alt-right" onclick="openNav()"></i></div>
 
 
@@ -65,26 +65,60 @@
             <a href="">Accessories</a>
             <a href="">Support</a>
         </div>
-        <div class="sub-menu d-flex justify-content-center">
+        <div class="sub-menu d-flex justify-content-center ">
             <div class="col-lg-3">
-                 <ul id="first_col">
+                <ul id="first_col">
 
-                 </ul>
-                 </div>
-                 <div class="col-lg-2">
-                     <ul id="sec_col">
+                </ul>
+            </div>
+            <div class="col-lg-2">
+                <ul id="sec_col">
 
-                     </ul>
-                 </div>
-                 <div class="col-lg-2">
-                     <ul id="third_col">
+                </ul>
+            </div>
+            <div class="col-lg-2">
+                <ul id="third_col">
 
-                     </ul>
-                 </div>
-                 <div class="col-lg-2">
-                
-                 </div>`
+                </ul>
+            </div>
+            <div class="col-lg-2">
 
+            </div>
+        </div>
+        <div class="sub-menu-2 d-flex flex-wrap">
+            <div class="col-lg-1 ">
+
+            </div>
+            <div class="col-lg-11" style="padding-top: 70px ;padding-left: 30px;">
+                <div>
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" name="" id="search-input" placeholder="Search apple.com">
+                    <i class='bx bxs-x-circle' onclick="rubSearch()"></i>
+                </div>
+                <div>
+                    <p>Quick Links</p>
+                    <ul class="recent-search " >
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="sub-menu-3 d-flex flex-wrap">
+<div class="col-lg-1"></div>
+<div class="col-lg-11 mt-5">
+<h2>Your Bag is empty.</h2>
+<p><a href="">Sign in</a> to see if you have any saved items</p>
+<div style="position: relative; top: 20px;left: -15px;">
+<span>My Profile</span>
+<ul>
+    <li><i class='bx bx-right-arrow-alt'></i> Orders</li>
+    <li><i class='bx bx-right-arrow-alt'></i> Your Saves</li>
+    <li><i class='bx bx-right-arrow-alt'></i> Account</li>
+    <li><i class='bx bx-right-arrow-alt'></i> Sign in</li>
+</ul>
+</div>
+</div>
         </div>
 
 
@@ -342,14 +376,14 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <a>Apple One</a>
-                        <a>Apple Tv+</a>
-                        <a>Apple Music</a>
-                        <a>Apple Arcade</a>
-                        <a>Apple Fitness+</a>
-                        <a>Apple News+</a>
-                        <a>Apple Podcasts</a>
-                        <a>Apple Books</a>
-                        <a>App Store</a>
+                            <a>Apple Tv+</a>
+                            <a>Apple Music</a>
+                            <a>Apple Arcade</a>
+                            <a>Apple Fitness+</a>
+                            <a>Apple News+</a>
+                            <a>Apple Podcasts</a>
+                            <a>Apple Books</a>
+                            <a>App Store</a>
                         </div>
                     </div>
                 </div>
@@ -387,8 +421,8 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                        <a>Apple and Business</a>
-                        <a>Shop for Business</a>
+                            <a>Apple and Business</a>
+                            <a>Shop for Business</a>
 
                         </div>
                     </div>
@@ -404,8 +438,8 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <a>Apple and Education</a>
-                        <a>Shop for K-12</a>
-                        <a>Shop for College</a>
+                            <a>Shop for K-12</a>
+                            <a>Shop for College</a>
                         </div>
                     </div>
                 </div>
@@ -420,7 +454,8 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body"><a>Apple in Healthcare</a>
                             <a>Health on Apple Watch</a>
-                            <a>Health Records on iPhone</a></div>
+                            <a>Health Records on iPhone</a>
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -432,7 +467,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"> 
+                        <div class="accordion-body">
                             <a>Shop For Government</a>
                             <a>Shop for Veterans and Military</a>
                         </div>
@@ -449,13 +484,13 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <a>Accessibility</a>
-                        <a>Education</a>
-                        <a>Envivronment</a>
-                        <a>Inclusion and Diversity</a>
-                        <a>Privacy</a>
-                        <a>Racial Equality and Justice</a>
-                        <a>Supplier Responsibility</a>
-                    </ul>
+                            <a>Education</a>
+                            <a>Envivronment</a>
+                            <a>Inclusion and Diversity</a>
+                            <a>Privacy</a>
+                            <a>Racial Equality and Justice</a>
+                            <a>Supplier Responsibility</a>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -470,12 +505,12 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <a>Newsroom</a>
-                        <a>Apple Leadership</a>
-                        <a>Career Opportunities</a>
-                        <a>Investor</a>
-                        <a>Ethics & Compaliance</a>
-                        <a>Events</a>
-                        <a>Contact Apple</a>
+                            <a>Apple Leadership</a>
+                            <a>Career Opportunities</a>
+                            <a>Investor</a>
+                            <a>Ethics & Compaliance</a>
+                            <a>Events</a>
+                            <a>Contact Apple</a>
                         </div>
                     </div>
                 </div>
