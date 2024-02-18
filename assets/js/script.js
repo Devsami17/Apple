@@ -354,10 +354,22 @@ function rubSearch() {
   ShowRecentWithoutFilter();
   searchBar.placeholder = 'Search apple.com';
 }
-var subMenu3 = document.querySelector('sub-menu-3')
+var subMenu3 = document.getElementById('sub-menu-3')
 function cartIcon(){
-  subMenu3.style.height = '400px !important';
+  subMenu3.style.height = '400px';
   subMenu3.style.display = 'block';
   subMenu3.style.opacity = '1';
+  Main.style.filter = 'blur(10px)'
+  Main.onmouseenter = () => {
+    subMenu3.style.height = '0px';
+    subMenu3.style.display = 'none';
+    subMenu3.style.opacity = '0';
+    Main.style.filter = 'blur(0px)'
+  };
 
 }
+
+window.addEventListener('offline',()=>{
+window.location.href = 'offline.html'
+
+})
